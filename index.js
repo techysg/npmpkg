@@ -6,5 +6,5 @@ export { default as validateEmail } from "./src/utils/validateEmail.js";
 export { default as validateIndianPincode } from "./src/utils/validateIndianPincode.js";
 
 export default function testPkg() {
-    return "Export default packages working!!!";
+    return "Export default packages working fine";
 }
