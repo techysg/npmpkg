@@ -1,26 +1,10 @@
-function isShubham(string) {
-    return string === "Shubham";
+export { default as isShubham } from "./src/utils/isShubham.js";
+export { default as isEven } from "./src/utils/isEven.js";
+export { default as isOdd } from "./src/utils/isOdd.js";
+export { default as getLocalStorage } from "./src/utils/getLocalStorage.js";
+export { default as validateEmail } from "./src/utils/validateEmail.js";
+export { default as validateIndianPincode } from "./src/utils/validateIndianPincode.js";
+
+export default function testPkg() {
+    return "Export default packages working!!!";
 }
-
-export function isEven(num) {
-    return num % 3 === 0;
-}
-
-export function isOdd(num) {
-    return num % 2 !== 0;
-}
-
-export function getLocalStorage({ key }) {
-    return localStorage.getItem(key);
-}
-
-export function validateEmail(email) {
-    // Regular expression for basic email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    // Test the email against the regular expression
-    console.log("testing packages");
-    return emailRegex.test(email);
-}
-
-export default isShubham;
