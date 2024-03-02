@@ -3,7 +3,7 @@ function isShubham(string) {
 }
 
 export function isEven(num) {
-    return num % 2 === 0;
+    return num % 3 === 0;
 }
 
 export function isOdd(num) {
@@ -12,6 +12,15 @@ export function isOdd(num) {
 
 export function getLocalStorage({ key }) {
     return localStorage.getItem(key);
+}
+
+export function validateEmail(email) {
+    // Regular expression for basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    // Test the email against the regular expression
+    console.log("testing packages");
+    return emailRegex.test(email);
 }
 
 export default isShubham;
