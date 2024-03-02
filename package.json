@@ -1,7 +1,7 @@
 {
-  "name": "shubhamgupta_npmpkg",
-  "version": "1.0.1",
-  "description": "npm package from shubham",
+  "name": "@shubhamgupta/npmpkg",
+  "version": "1.0.2",
+  "description": "packages from Shubham Gupta",
   "main": "index.js",
   "type": "module",
   "scripts": {
